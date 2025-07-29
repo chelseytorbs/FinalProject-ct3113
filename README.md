@@ -2,7 +2,7 @@
 
 This project implements a 3D Recurrent Reconstruction Neural Network (3D-R2N2) using PyTorch to reconstruct 3D voxelized shapes from single-view 2D images. The architecture is adapted from the original 3D-R2N2 paper, with modifications to reduce model complexity while maintaining reconstruction capability.
 
-## 🧠 Overview
+## Overview
 
 - **Task**: 3D shape reconstruction from single-view 2D images  
 - **Dataset**: [ShapeNetCore](https://shapenet.org/) (subset of 25,000 samples used)  
@@ -11,7 +11,7 @@ This project implements a 3D Recurrent Reconstruction Neural Network (3D-R2N2) u
 - **ML Method**: Supervised Learning  
 - **Framework**: PyTorch
 
-## 🛠 Features
+## Features
 
 - Replaced LSTM with GRU for efficiency  
 - Simplified decoder with single 3D convolution layer  
@@ -20,7 +20,7 @@ This project implements a 3D Recurrent Reconstruction Neural Network (3D-R2N2) u
 - Visualized outputs using TensorBoard and 3D scatter plots  
 - Evaluated using Intersection over Union (IoU)
 
-## 📊 Results
+## Results
 
 | Metric          | Value  |
 |-----------------|--------|
@@ -30,7 +30,7 @@ This project implements a 3D Recurrent Reconstruction Neural Network (3D-R2N2) u
 
 *Note: The simplified model trades off detail for reduced computational cost. Future improvements include training on the full dataset and testing alternative RNN layers.*
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── data/
@@ -47,7 +47,7 @@ This project implements a 3D Recurrent Reconstruction Neural Network (3D-R2N2) u
 └── README.md
 ```
 
-## 📦 Requirements
+## Requirements
 
 - Python 3.8+
 - PyTorch
@@ -59,7 +59,7 @@ This project implements a 3D Recurrent Reconstruction Neural Network (3D-R2N2) u
 pip install -r requirements.txt
 ```
 
-## 🚀 Run
+## Run
 
 ### Training
 
@@ -73,7 +73,7 @@ python train.py
 python evaluate.py
 ```
 
-## 📌 References
+## References
 
 - [3D-R2N2 Paper (Choy et al., 2016)](https://arxiv.org/abs/1604.00449)  
 - [ShapeNet Dataset](https://shapenet.org/)
